@@ -1,5 +1,5 @@
 import { Pool } from "undici-types";
-import {jogosRepositories, listar, BuscarId, Criar, atualizar, deletar } from "../repositories/jogo.repositories.js";
+import {jogosRepositories} from "../repositories/jogo.repositories.js";
 
 
 async function listar() {
@@ -27,12 +27,6 @@ async function deletar() {
     return jogos
 }
 
-export {
-  listar,
-  BuscarId,
-  Criar,
-  atualizar,
-  deletar
-};
+
 
 export const JogosServices = new JogosServices()
